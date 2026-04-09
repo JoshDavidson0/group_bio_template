@@ -126,3 +126,54 @@ button:hover {
     margin: 5px;
     color: #3a7a4a; /* evergreen */
     font-weight: bold;
+}
+
+/* Josh */
+
+/* Hide the content at first*/
+#josh-content-wrapper{
+    display:none;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+/* When the content is shown, use Flexbox*/
+#josh-content-wrapper.show{
+    display: flex;
+}
+
+/* Edits profile picture*/
+.josh-profile-pic{
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Edits the text in the bio*/
+.josh-bio-text{
+    flex: 2;
+    max-width: 400px;
+}
+
+/* Edits the two moodboard images on the right side of the bio*/
+.josh-moodboard-images{
+    gap: 10px;
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Editing color and font of bio card*/
+.josh-card {
+    background-color: #CF9FFF;
+    border-left: 6px solid #CCCCFF; /* deep forest green */
+    font-family: 'Century Gothic', sans-serif;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

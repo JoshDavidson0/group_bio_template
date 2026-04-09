@@ -11,7 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/IMG_8944.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -29,28 +29,71 @@
         <p>Bioinformatics and CS Student</p>
         <button onclick="toggleBio('maya-bio')">Show Bio</button>
         <p id="maya-bio" class="bio">Hi! I'm Maya, I am a senior studying Computer Science with a concentration in Bioinformatics. I love the research side and manipulating data with python tools.</p>
-    </div> class="moodboard">
-        <img src="images/syn-analysis.jpg" alt="Favorite Concept: Synteny Analysis">
-        <a href="https://github.com/mnhsm-bio">My GitHub</a>
+        <div class="moodboard">
+            <img src="images/syn-analysis.jpg" alt="Favorite Concept: Synteny Analysis">
+            <a href="https://github.com/mnhsm-bio">My GitHub</a>
+        </div>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+
+    <div class="card josh-card">
+        <h2>Josh Davidson</h2>
+        <p>CS Student</p>
+        <button onclick="toggleBioWithImages()">Show Bio</button>
+
+        <div id="josh-content-wrapper" class="bio-container">
+            <img src="img/IMG_8945.jpg" class="josh-profile-pic" id="josh-profile-pic" alt="">
+            <p id="josh-bio-text" class="josh-bio-text">
+                Hello, my name is Josh, I'm a junior studying Computer Science with a concentration in Systems and Networks.
+                I find network configuration and product delivery very interesting.<br><br>
+                <a href="https://github.com/joshuadavidson0">My GitHub</a>
+            </p>
+
+            <div class="moodboard-images">
+                <img src="img/IMG_8946.jpg" class="josh-moodboard-images" id="moodboard-image1" alt="">
+                <img src="img/IMG_8947.jpg" class="josh-moodboard-images" id="moodboard-image2" alt="">
+            </div>
+
+        </div>
     </div>
+
+
     <div class="card">
         <h2>Emily Johnson</h2>
         <p>UI/UX Designer</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
         <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
     </div>
+
+    <div class="card">
+        <h2>Emily Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+
 </div>
+
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <p>Our mission is to create a dependable and supportive team environment built on open communication and respect. We commit to respecting each others
+        time by meeting deadlines, mentioning conflicts early, and maintaining a focused collaboration.
+    </p>
+    <h2>Team Rules</h2>
+    <p>- Each team member will respect each other's time and make sure
+        we are doing our part in a timely manner for the deadline.<br><br>
+        - If a member anticipates missing a deadline, they must notify the
+        team as early as possible so adjustments can be made.<br><br>
+        - Team members will speak up when they see risks, blockers, or
+        unclear requirements.<br><br>
+        - Members will ask for help when they are stuck instead of silently
+        falling behind.<br><br>
+        - Meetings will stay on topic and follow an agenda.<br><br>
+        - Feedback will be encouraged and handled constructively.<br><br>
+        - The team will communicate with transparency about workload,
+        availability, and skill limitations.
+    </p>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->

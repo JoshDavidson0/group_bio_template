@@ -15,12 +15,12 @@ function toggleBio(bioId) {
 /**
  * Toggles the display of an individual team member's bio containing images
  */
-function toggleBioWithImages(){
-    const wrapper = document.getElementById("josh-content-wrapper");
+function toggleBioWithImages(wrapperId) {
+    const wrapper = document.getElementById(wrapperId);
 
-    if(wrapper.classList.contains("show")){
+    if (wrapper.classList.contains("show")) {
         wrapper.classList.remove("show");
-    } else{
+    } else {
         wrapper.classList.add("show");
     }
 }

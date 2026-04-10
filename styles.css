@@ -88,6 +88,8 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* Hide content before "show bio" is pressed */
 #maya-content-wrapper{
     display:none;
     align-items: center;
@@ -96,6 +98,7 @@ button:hover {
     margin-top: 20px;
 }
 
+/* When the content is shown, use Flexbox*/
 #maya-content-wrapper.show{
     display: flex;
 }
@@ -107,6 +110,7 @@ button:hover {
     flex-shrink: 0;
 }
 
+/* Edits the text in the bio*/
 .maya-bio-text{
     flex: 2;
     min-width: 250px;
@@ -124,6 +128,7 @@ button:hover {
     height: 350px
 }
 
+/* Edits dimensions of moodboard image*/
 .maya-mood-img{
     width: 250px;
     height: auto;
@@ -210,14 +215,9 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Editing color and font of bio card*/
-.luke-card {
-    background-color: #FFD700; /* maize-yellow */
-    border-left: 6px solid #0000FF; /* blue */
-    font-family: 'Times New Roman', sans-serif;
-    padding: 20px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* When the content is shown, use Flexbox*/
+#luke-content.show{
+    display: flex;
 }
 
 /* Edits dimensions of profile picture*/
@@ -228,6 +228,16 @@ button:hover {
     border-radius: 8px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/* Editing color and font of bio card*/
+.luke-card {
+    background-color: #FFD700; /* maize-yellow */
+    border-left: 6px solid #0000FF; /* blue */
+    font-family: 'Times New Roman', sans-serif;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Chand */

@@ -11,7 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/IMG_8944.png" alt="Team Logo" class="team-logo">
+    <img src="img/IMG_8949.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -51,7 +51,9 @@
     <div class="card josh-card">
         <h2>Josh Davidson</h2>
         <p>CS Student</p>
-        <button onclick="toggleBioWithImages()">Show Bio</button>
+        <button onclick="toggleBioWithImages('josh-content-wrapper')">
+            Show Bio
+        </button>
 
         <div id="josh-content-wrapper" class="bio-container">
             <img src="img/IMG_8945.jpg" class="josh-profile-pic" id="josh-profile-pic" alt="">
@@ -64,6 +66,32 @@
             <div class="moodboard-images">
                 <img src="img/IMG_8946.jpg" class="josh-moodboard-images" id="moodboard-image1" alt="">
                 <img src="img/IMG_8947.jpg" class="josh-moodboard-images" id="moodboard-image2" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card chand-card">
+        <h2>Chand Mallangi</h2>
+        <p>CS Student</p>
+        <button onclick="toggleBioWithImages('chand-content-wrapper')">
+            Show Bio
+        </button>
+
+        <div id="chand-content-wrapper" class="bio-container">
+
+            <img src="img/Chand_profile_pic.jpg" class="chand-profile-pic" alt="Profile image">
+
+            <p id="chand-bio-text">
+                Hi, my name is Chand. I am a sophomore studying Computer Science with a
+                concentration in AI, Robotics, and Gaming. I find the process of creating prediction models fascinating.
+                <br><br>
+            </p>
+
+            <div class="moodboard-images-chand">
+                <img src="img/predictive_modeling.png" class="mood-img" alt="Predictive Modeling Process">
+                <a href="https://github.com/gmallang">My GitHub</a>
             </div>
 
         </div>

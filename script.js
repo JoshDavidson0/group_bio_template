@@ -13,6 +13,19 @@ function toggleBio(bioId) {
 }
 
 /**
+ * Toggles the display of an individual team member's bio containing images
+ */
+function toggleBioWithImages(){
+    const wrapper = document.getElementById("josh-content-wrapper");
+
+    if(wrapper.classList.contains("show")){
+        wrapper.classList.remove("show");
+    } else{
+        wrapper.classList.add("show");
+    }
+}
+
+/**
  * Shows the specified section ('bios' or 'vision') and hides the other
  * @param {string} sectionId - The ID of the section to display
  */

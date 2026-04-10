@@ -177,3 +177,24 @@ button:hover {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Luke */
+
+/* Hide the content at first */
+#luke-bio {
+    display:none;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Editing color and font of bio card*/
+.luke-card {
+    background-color: #FFD700; /* maize-yellow */
+    border-left: 6px solid #0000FF; /* blue */
+    font-family: 'Times New Roman', sans-serif;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

@@ -88,6 +88,48 @@ button {
 button:hover {
     background: #0056b3;
 }
+#maya-content-wrapper{
+    display:none;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#maya-content-wrapper.show{
+    display: flex;
+}
+
+/* Profile picture styling */
+.mayas-profile-pic{
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.maya-bio-text{
+    flex: 2;
+    min-width: 250px;
+    max-width: 500px;
+    text-align: left;
+    align-self: center;
+}
+
+/* Moodboard images */
+.moodboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 350px
+}
+
+.maya-mood-img{
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
 /* Maya's Forest Green Bio Card */
 .maya-card {
@@ -105,29 +147,6 @@ button:hover {
     box-shadow: 0 4px 15px rgba(47, 93, 58, 0.3); /* pine green shadow */
 }
 
-/* Profile picture styling */
-.maya-card .profile-pic {
-    width: 140px;
-    border-radius: 50%;
-    border: 3px solid #2f5d3a; /* forest green border */
-    margin-bottom: 10px;
-}
-
-/* Moodboard images */
-.moodboard img {
-    width: 60px;
-    margin: 5px;
-    border-radius: 8px;
-}
-
-/* Moodboard links */
-.moodboard a {
-    display: inline-block;
-    margin: 5px;
-    color: #3a7a4a; /* evergreen */
-    font-weight: bold;
-}
-
 /* Josh */
 
 /* Hide the content at first*/
@@ -137,7 +156,6 @@ button:hover {
     gap: 20px;
     justify-content: space-between;
     margin-top: 20px;
-
 }
 
 /* When the content is shown, use Flexbox*/
@@ -155,7 +173,10 @@ button:hover {
 /* Edits the text in the bio*/
 .josh-bio-text{
     flex: 2;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 500px;
+    text-align: left;
+    align-self: center;
 }
 
 /* Edits the two moodboard images on the right side of the bio*/

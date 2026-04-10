@@ -24,15 +24,25 @@
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
     <div class="card maya-card">
-        <img src="img/IMG_4558 (1).jpg" class="mayas-profile-pic">
         <h2>Maya Hernandez</h2>
         <p>Bioinformatics and CS Student</p>
-        <button onclick="toggleBio('maya-bio')">Show Bio</button>
-        <p id="maya-bio" class="bio">Hi! I'm Maya, I am a senior studying Computer Science with a concentration in Bioinformatics. I love the research side and manipulating data with python tools.</p>
-        <div class="moodboard">
-            <img src="images/syn-analysis.jpg" alt="Favorite Concept: Synteny Analysis">
-            <a href="https://github.com/mnhsm-bio">My GitHub</a>
+        <button onclick="toggleBioWithImages('maya-content-wrapper')">
+            Show Bio
+        </button>
+
+        <div id="maya-content-wrapper" class="bio-container">
+            <img src="img/IMG_4558 (1).jpg" class="mayas-profile-pic" id="maya-profile-pic" alt="">
+            <p id="maya-bio" class="maya-bio-text">Hi! I'm Maya, I am a senior studying Computer Science with a concentration in Bioinformatics.
+                I love the research side and manipulating data with python tools.<br><br>
+                <a href="https://github.com/mnhsm-bio">My GitHub</a>
+            </p>
+
+            <div class="moodboard">
+                <img src="img/syn-analysis.jpg" class="maya-mood-img" alt="Favorite Concept: Synteny Analysis">
+            </div>
+
         </div>
+
     </div>
 
     <div class="card josh-card">

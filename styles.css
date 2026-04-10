@@ -177,3 +177,66 @@ button:hover {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Chand */
+
+/* Hide content before "show bio" is pressed */
+#chand-content-wrapper {
+    display: none;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* When the content is shown, use Flexbox*/
+#chand-content-wrapper.show{
+    display: flex;
+}
+
+/* Edits dimensions of profile picture*/
+.chand-profile-pic {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+/* Edits the text in the bio*/
+#chand-bio-text {
+    flex: 2;
+    min-width: 250px;
+    max-width: 500px;
+    text-align: left;
+    align-self: center;
+}
+
+/* Edits one moodboard image on right side of screen*/
+.moodboard-images-chand {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 350px;
+}
+
+/* Edits dimensions of moodboard image*/
+.mood-img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Editing color and font of bio card*/
+.chand-card {
+    background-color: #ADD8E6;
+    border-left: 6px solid #E6F4FF;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
